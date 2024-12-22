@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+
+        <title>Tarifs</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body class="bg-gray-100">
+
+        <header class=" bg-blue-600 text-white text-xs">
+            <nav class="flex justify-around items-center px-6  ">
+                <p class="text-lg font-bold">BIENVENUE AU TCF CANADA</p>
+                <ul class="md:flex flex-row md:space-x-4 items-center">
+                    <li class="md:border-s md:px-1"><a href="#" class="flex items-center space-x-1 md:py-2"><i class="fa fa-graduation-cap"></i><span>FORMATION</span></a></li>
+                    <li class="md:border-s md:px-1"><a href="#" class="flex items-center space-x-1 md:py-2"><i class="fa fa-id-card"></i><span>TARIFS</span></a></li>
+                    <li class="md:border-s md:px-1"><a href="#" class="flex items-center space-x-1 md:py-2"><i class="fa fa-paper-plane"></i><span>CONTACTER LE SERVICE CLIENT</span></a></li>
+                    <li class="wd-header-divider wd-full-height  whb-divider-element md:py-2"><a class="reseau"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="reseau"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="reseau"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="reseau"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="static bg-white shadow py-4 px-4">
+            <nav class="flex justify-around items-center">
+            
+                <div>
+                    <a href="acceuil.html"> <img src="tcf.jpeg" alt="tcf" class="w-auto h-20 md:pl-60"></a>
+                </div>
+
+            
+                <div class="md:flex hidden" id="menu">
+                    <ul class="flex justify-around items-center font-bold text-xs space-x-4">
+                        <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-pen-to-square"></i><span>EXPRESSION ÉCRITE</span></a></li>
+                        <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-people-arrows"></i><span>EXPRESSION ORALE</span></a></li>
+                        <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-book-open-reader"></i><span>COMPRÉHENSION ÉCRITE</span></a></li>
+                        <li><a href="#" class="flex items-center space-x-1"><i class="fa-duotone fa-solid fa-headphones"></i><span>COMPRÉHENSION ORALE</span></a></li>
+                        <li><a href="Formulaire.html" class="flex items-center space-x-1"><i class="fa fa-user-plus"></i><span>BONJOUR DOMINIQUE</span></a></li>
+                        <li><a href="Formulaire.html" class="flex items-center space-x-1 text-blue-600"><i class="fa fa-sign-out"></i><span>SE DÉCONNECTER</span></a></li>
+                    </ul>
+                </div>
+
+            
+                <button id="gmenu" class="md:hidden text-xl text-gray-600">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+
+
+            <div id="pmenu" class="md:hidden hidden">
+                <ul class="flex flex-col items-center font-bold text-xs space-y-4 py-4">
+                    <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-pen-to-square"></i><span>EXPRESSION ÉCRITE</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-people-arrows"></i><span>EXPRESSION ORALE</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-1"><i class="fa-solid fa-book-open-reader"></i><span>COMPRÉHENSION ÉCRITE</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-1"><i class="fa-duotone fa-solid fa-headphones"></i><span>COMPRÉHENSION ORALE</span></a></li>
+                    <li><a href="Formulaire.html" class="flex items-center space-x-1"><i class="fa fa-user-plus"></i><span>BONJOUR DOMINIQUE</span></a></li>
+                    <li><a href="Formulaire.html" class="flex items-center space-x-1 text-blue-600"><i class="fa fa-sign-out"></i><span>SE DÉCONNECTER</span></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <script>
+
+            const gmenu = document.getElementById('gmenu');
+            const pmenu = document.getElementById('pmenu');
+            
+            gmenu.addEventListener('click', () => {
+            
+                pmenu.classList.toggle('hidden');
+            });
+        </script>
+
+        <section class="text-center bg-blue-600 text-white py-12">
+            <h2 class="text-6xl font-bold">TARIFS</h2>
+           
+        </section>
+        <section class="text-center py-6">
+            <h2 class="text-2xl ">
+                <strong>NOS TESTS SONT TIRES DE L'EXAMEN RÉEL DU <span class="text-blue-600">TCF</span></strong><br>
+                <span class="text-sm">Faites vos tests en souscrivant à un abonnement</span>
+            </h2>
+        </section>
+
+        <main>
+            <div class="md:flex md:justify-center md:m-[100px] md:space-x-8">
+               
+                <div class="abonnement hover:transform hover:translate-y-[-20px] transition-transform border border-blue-500 rounded-lg shadow-lg w-[300px] m-1">
+                    <h3 class="h3 bg-blue-700 text-white p-10 rounded-t-lg text-center font-bold text-2xl">Bronze</h3>
+                    <div class="infos text-center px-5 py-2">
+                        <p> <span class="text-4xl font-bold">$14</span> <span  class="align-top font-bold">99</span></p> 
+                        <p >Compréhension Écrite : <span class="font-bold text-blue-700">38</span> tests d’entraînement (<span class="font-bold">+1000</span> Textes)</p>
+                        <hr class="my-1"/>
+                        <p >Compréhension Orale : <span class="font-bold text-blue-700">36</span> tests d’entraînement (<span class="font-bold">+1000</span> Extraits sonores)</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">2</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">3</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p class="font-bold text-sm">Accès : 2 Mois</p>
+                        <button class="w-full py-3 my-4 rounded-xl bg-blue-600 text-white font-bold">S'abonner</button>
+                    </div>
+                </div>
+        
+                <div class="abonnement hover:transform hover:translate-y-[-20px] transition-transform border border-blue-500 rounded-lg shadow-lg w-[300px] m-1">
+                    <h3 class="h3 bg-blue-700 text-white p-10 rounded-t-lg text-center font-bold text-2xl">Silver</h3>
+                    <div class="infos text-center px-5 py-2">
+                        <p> <span class="text-4xl font-bold">$29</span> <span  class="align-top font-bold">99</span></p> 
+                        <p >Compréhension Écrite : <span class="font-bold text-blue-700">38</span> tests d’entraînement (<span class="font-bold">+1000</span> Textes)</p>
+                        <hr class="my-1"/>
+                        <p >Compréhension Orale : <span class="font-bold text-blue-700">36</span> tests d’entraînement (<span class="font-bold">+1000</span> Extraits sonores)</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">2</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">3</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p class="font-bold text-sm">Accès : 2 Mois</p>
+                        <button class="w-full py-3 my-4 rounded-xl bg-blue-600 text-white font-bold">S'abonner</button>
+                    </div>
+                </div>
+        
+                <div class="abonnement hover:transform hover:translate-y-[-20px] transition-transform border border-blue-500 rounded-lg shadow-lg w-[300px] m-1">
+                    <h3 class="h3 bg-blue-700 text-white p-10 rounded-t-lg text-center font-bold text-2xl">Gold</h3>
+                    <div class="infos text-center px-5 py-2">
+                        <p> <span class="text-4xl font-bold">$49</span> <span  class="align-top font-bold">99</span></p> 
+                        <p >Compréhension Écrite : <span class="font-bold text-blue-700">38</span> tests d’entraînement (<span class="font-bold">+1000</span> Textes)</p>
+                        <hr class="my-1"/>
+                        <p >Compréhension Orale : <span class="font-bold text-blue-700">36</span> tests d’entraînement (<span class="font-bold">+1000</span> Extraits sonores)</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">2</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p >Expression Orale : Corrections Tâche <span class="font-bold text-blue-700">3</span> des actualités.</p>
+                        <hr class="my-1"/>
+                        <p class="font-bold text-sm">Accès : 2 Mois</p>
+                        <button class="w-full py-3 my-4 rounded-xl bg-blue-600 text-white font-bold">S'abonner</button>
+                    </div>
+                </div>
+            </div>
+        </main> 
+    </body>
+
+    <footer class=" flex justify-center bg-blue-800 text-white py-20 px-8 sm:px-20">
+        <div class="flex flex-wrap justify-center space-y-8 sm:space-y-0">
+            
+            <div class="w-full sm:w-1/4">
+                <ul class="space-y-2">
+                    <li><h3 class="text-lg font-bold">Les Pages</h3></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-house-chimney"></i><span>Page d'Accueil</span></a><hr class="mr-20"></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-pen-to-square"></i><span>Expression Écrite</span></a><hr class="mr-20"></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-people-arrows"></i><span>Expression Orale</span></a><hr class="mr-20"></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-book-open-reader"></i><span>Compréhension Écrite</span></a><hr class="mr-20"></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-duotone fa-solid fa-headphones"></i><span>Compréhension Orale</span></a><hr class="mr-20"></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-scale-balanced"></i><span>Politique de Retour et de Remboursement</span></a></li>
+                </ul>
+            </div>
+                
+            <div class="w-full sm:w-1/4">
+                <ul class="space-y-2">
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-sharp-duotone fa-solid fa-gavel"></i><span>Politique de Confidentialité</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 text-sm"><i class="fa-solid fa-blog"></i><span>Blog</span></a></li>
+                </ul>
+                <h3 class="text-lg font-bold mt-6">Paramètres du Compte</h3>
+                <div class="bg-blue-700 mr-20 p-2">
+                    <a href="form_connexion.html"><p><i class="fa fa-sign-out md:p-2"></i>SE CONNECTER</p></a>
+                    <a href="form_inscription.html"><p><i class="fa-solid fa-user-plus md:p-2"></i>S'INSCRIRE</p></a>
+                    <a href="#"><p></span><i class="fa-solid fa-key md:p-2"></i>MOT DE PASSE OUBLIER</p></a>
+                </div>
+            </div>
+                
+            <div class="w-full sm:w-1/4">
+                <h2 class="text-xl font-bold">Nos Réseaux</h2>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-2xl"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <h2 class="text-lg font-bold mt-6">À Propos de Nous</h2>
+                <p class="text-sm mt-2">Plateforme spécialisée dans la préparation au TCF Canada, tests à conditions réelles, sujets récents.</p>
+            </div>
+    
+            <div class="justify-center items-center w-full sm:w-1/4 ">
+                <div>
+                    <img src="paie.jpg" alt="Paiement sécurisé" class="w-40 h-40 object-cover rounded-md">
+                    <button class="bg-blue-600 text-white py-2 px-10 mt-2 rounded-lg font-semibold">Cliquez ici</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class="flex justify-around bg-white py-4 px-8 sm:px-20">
+        <p class="text-center text-sm">TCF CA TEST® 2024 | Tous les droits réservés</p>
+        <div class="text-center">
+            <img src="cart.jpg" alt="Paiement sécurisé" class="w-50 h- object-cover mx-auto">
+        </div>
+    </footer>
+</html>
+            
